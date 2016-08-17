@@ -28,3 +28,11 @@
 	margin-top: 8%;
 	margin-left: 5%;
 }
+.authors_container{
+	margin-left: 3%;
+	margin-right: 20%;
+}
+#addAuthorButton{
+	position: relative;
+	margin-left: 3%;
+}

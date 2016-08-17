@@ -65,8 +65,8 @@
         </tr>
       </table>
     </div>
-   
-   
+
+    <a id ="addAuthorButton" class="btn btn-warning" href="addAuthor.php">Add author</a>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->

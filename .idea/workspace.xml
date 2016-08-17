@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ea053a2-756e-4807-9275-0d1a195a2591" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/html/authors.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/html/books.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/html/home_img.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/html/index.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/library.css" afterPath="$PROJECT_DIR$/web/css/library.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/php/authors.php" afterPath="$PROJECT_DIR$/web/php/authors.php" />
     </list>
     <ignored path="phpComunicationsI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,28 +27,28 @@
       <file leaf-file-name="library.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/css/library.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+            <state relative-caret-position="540">
+              <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addAuthor.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="addAuthor.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/php/addAuthor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
+            <state relative-caret-position="552">
               <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authors.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="authors.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/php/authors.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+            <state relative-caret-position="375">
+              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -68,8 +65,8 @@
         <option value="$PROJECT_DIR$/web/html/index.php" />
         <option value="$PROJECT_DIR$/web/html/books.php" />
         <option value="$PROJECT_DIR$/web/html/authors.php" />
-        <option value="$PROJECT_DIR$/web/css/library.css" />
         <option value="$PROJECT_DIR$/web/php/addAuthor.php" />
+        <option value="$PROJECT_DIR$/web/css/library.css" />
         <option value="$PROJECT_DIR$/web/php/authors.php" />
       </list>
     </option>
@@ -182,12 +179,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1471458382202</updated>
-      <workItem from="1471458384065" duration="3775000" />
+      <workItem from="1471458384065" duration="5334000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3775000" />
+    <option name="totallyTimeSpent" value="5334000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="43" width="1260" height="733" extended-state="0" />
@@ -269,26 +266,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/php/authors.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/library.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+        <state relative-caret-position="540">
+          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/php/addAuthor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
+        <state relative-caret-position="552">
           <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/php/authors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding />
         </state>
       </provider>
