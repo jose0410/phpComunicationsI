@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>books</title>
+    <title>authors</title>
 
     <!-- Bootstrap -->
     <link href="../css/bootstrap.css" rel="stylesheet">
@@ -18,7 +18,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <header>
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -28,18 +28,42 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-         <a class="navbar-brand" href="index.html">Library</a>
+          <a class="navbar-brand" href="index.php">Library</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="authors.html">Authors</a></li>
-            <li><a href="books.html">Books</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li class="active"><a href="authors.php">Authors</a></li>
+            <li><a href="books.php">Books</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
+    </div>
+
+  </header>
+  <body>
+
+
+    <div class = authors_container>
+      <h2>AUTHORS</h2>
+      <table class="table table-condensed">
+        <tr>
+          <td class="active"><h3>Name</h3></td>
+          <td class="active"><h3>Id</h3></td>
+          <td class="active"><h3>Birth Date</h3></td>
+          <td class="active"><h3>Books Written</h3></td>
+          <td class="active"><h3>Age</h3></td>
+        </tr>
+        <tr>
+          <td class="active">Alejandro Granada Restrepo</td>
+          <td class="active">1</td>
+          <td class="active">96/08/14</td>
+          <td class="active">14</td>
+          <td class="active">20</td>
+        </tr>
+      </table>
     </div>
    
    
