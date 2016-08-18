@@ -45,27 +45,51 @@
   </header>
   <body>
 
+<div>
+<?php
 
-    <div class = authors_container>
-      <h2>AUTHORS</h2>
-      <table class="table table-condensed">
-        <tr>
-          <td class="active"><h3>Name</h3></td>
-          <td class="active"><h3>Id</h3></td>
-          <td class="active"><h3>Birth Date</h3></td>
-          <td class="active"><h3>Books Written</h3></td>
-          <td class="active"><h3>Age</h3></td>
-        </tr>
-        <tr>
-          <td class="active">Alejandro Granada Restrepo</td>
-          <td class="active">1</td>
-          <td class="active">96/08/14</td>
-          <td class="active">14</td>
-          <td class="active">20</td>
-        </tr>
-      </table>
-    </div>
+  
+$conexion=mysqli_connect("localhost","root","root","library") or
+die("problems with the connexion");
 
+
+$registros=mysqli_query($conexion,"select id,name,books,age
+                        from author") or
+  die("Problems".mysqli_error($conexion));
+
+
+echo "</div>";
+   echo " <div class = authors_container>";
+     echo " <h2>AUTHORS</h2>";
+      echo "<table class="."table table-condensed".">";
+       echo " <tr>";
+       echo "<td class="."active"."><h3> id </h3></td>";
+          echo "<td class="."active"."><h3>name</h3></td>";
+          echo "<td class="."active"."><h3>books written</h3></td>";
+          echo "<td class="."active"."><h3>name</h3>age</td>";
+      echo "</tr>";
+while ($reg=mysqli_fetch_array($registros)){
+
+
+
+        echo"<tr>";
+         echo "<td class="."active".">".$reg['id']."</td>";
+          echo "<td class="."active".">".$reg['name']."</td>";
+          echo "<td class="."active".">".$reg['books']."</td>";
+          echo "<td class="."active".">".$reg['age']."</td>";
+       echo "</tr>";
+      
+}
+echo"</table>";
+    echo"</div>";
+mysqli_close($conexion);
+
+
+
+
+?>
+
+</div>
     <a id ="addAuthorButton" class="btn btn-warning" href="addAuthor.php">Add author</a>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

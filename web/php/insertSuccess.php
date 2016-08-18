@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,11 +14,12 @@
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-</head>
-<header>
+  </head>
+
+  <header>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -33,7 +34,7 @@
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="index.php">Home</a></li>
-                    <li class="active"><a href="authors.php">Authors</a></li>
+                    <li ><a href="authors.php">Authors</a></li>
                     <li><a href="books.php">Books</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
@@ -43,50 +44,36 @@
     </div>
 
 </header>
-<body>
+  <body>
+<?php
 
-<div class = "add_author_form_div">
-    <form action="insertSuccess.php" method="post">
+ $conexion=mysqli_connect("localhost","root","root","library") or
+die("problems with the connexion");
 
-        <div class="form-group">
-            <label >id</label>
-            <input type="text" class="form-control"  name="authorId" placeholder="Type the id">
-        </div>
-        <div class="form-group">
-            <label >Name</label>
-            <input type="text" class="form-control"  name="authorName" placeholder="Type the name">
-        </div>
-       
-        <div class="form-group">
-            <label >Books Written</label>
-            <input type="number" class="form-control"  name="authorBooks" placeholder="Enter the number of books the author have written">
-        </div>
-        <div class="form-group">
-            <label >Age</label>
-            <input type="number" class="form-control"  name="authorAge" placeholder="Enter the age">
-        </div>
+mysqli_query($conexion,"insert into  author(id,name,books,age) values 
+                       ($_REQUEST[authorId],'$_REQUEST[authorName]',$_REQUEST[authorBooks],$_REQUEST[authorAge])")
+or die("problems".mysqli_error($conexion)); 
 
-        <button type="submit" class="btn btn-default" value="addAuthor">Add</button>
-    </form>
+mysqli_close($conexion);
 
+?>
+
+<div class = "img-insert-success-div">
+<img   id = "img-insert-success" src="../img/check.jpeg" alt="check" width="10%" height="70% " class="img-round" />
+
+</div>
+<div class = "success-label">
+<h2>Author added </h2>
 </div>
 
 
 
 
+    
 
-
-
-
-
-
-
-
-
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="../js/bootstrap.js"></script>
-</body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+  </body>
 </html>
