@@ -40,8 +40,27 @@
       </div>
     </nav>
 
+    <div class = "books_container">
+      <table class="table table-hover">
+        <tr>
+          <td class="book_img_td" nowrap><div class="book_img"><img src="../img/El Juego de Ripper.jpg" alt="book" width="150" height="200"></div></td>
+          <td>
+            <table class="table-hover">
+              <tr>
+                <td><div class="book_name">El Juego de Ripper</div></td>
+              </tr>
+              <tr>
+                <td>Author</td>
+              </tr> 
+              <tr>
+                <td>Description</td>
+              </tr>         
+          </table>
+          </td>
+        </tr>
+      </table>
     </div>
-   
+   <a id ="addAuthorButton" class="btn btn-warning" href="addBooks.php">Add Book</a>
    
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

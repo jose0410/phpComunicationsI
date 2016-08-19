@@ -23,12 +23,14 @@
 
 .authors_container{
 	margin-top: 10%;
+	margin-left: 3%;
+	margin-right: 20%;
 }
 .add_author_form_div{
 	margin-top: 8%;
 	margin-left: 5%;
 }
-.authors_container{
+.authors_container,{
 	margin-left: 3%;
 	margin-right: 20%;
 }
@@ -45,4 +47,25 @@
 	margin-left: 45%;
 	
 }
+.add_book_form_div{
+	margin-top: 8%;
+	margin-left: 5%;
+	position: absolute;
+}
+.add_book_button{
+	position: relative;
+	margin-top: 30px;
+}
 
+.books_container{
+	margin-left: 3%;
+	margin-right: 20%;
+	margin-top: 15%;
+}
+.book_img{
+	width: 10%;
+}
+.book_img_td{
+		width: 10%;
+padding-right: 0%;
+}
