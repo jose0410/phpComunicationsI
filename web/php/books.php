@@ -40,32 +40,55 @@
       </div>
     </nav>
 
-    <div class = "books_container">
-      <table class="table table-hover">
-        <tr>
-          <td class="book_img_td" nowrap>
-            <div class="book_img">
-              <img src="../img/El Juego de Ripper.jpg" alt="book" width="150" height="200">
-            </div>
-          </td>
-          <td>
-            <table class="table-hover">
-              <tr>
-                <td><div class="book_name">El Juego de Ripper</div></td>
-              </tr>
-              <tr>
-                <td>Author</td>
-              </tr> 
-              <tr>
-                <td>Description</td>
-              </tr>         
-          </table>
-          </td>
-        </tr>
-      </table>
     </div>
-   <a id ="addAuthorButton" class="btn btn-warning" href="addBooks.php">Add Book</a>
-   
+     <div class = "books_container">
+      <h2>BOOKS</h2>
+<?php
+
+
+$conexion=mysqli_connect("localhost","root","root","library") or
+die("problems with the connexion");
+
+
+$registros=mysqli_query($conexion,"select name,description,author,img_path
+                        from book") or
+die("Problems".mysqli_error($conexion));
+
+while ($reg=mysqli_fetch_array($registros)) {
+  $authorId = $reg['author'];
+
+  $authorName=mysqli_query($conexion,"select name
+                       from author where id=$authorId") or
+  die("Problems".mysqli_error($conexion));
+  $regName=mysqli_fetch_array($authorName);
+
+
+      echo"<table class=\"table table-hover\">";
+       echo "<tr>";
+  echo "<td class=\"book_img_td\" nowrap><div class=\"book_img\"><img src=\"../img/".$reg['img_path']."\"". "alt=\"book\" width=\"150\" height=\"200\"></div></td>";
+         echo "<td>";
+           echo "<table class=\"table-hover book-info-table\">";
+             echo "<tr>";
+               echo "<td><div class=\"book_name\">" . $reg['name'] . "</div></td>";
+             echo "</tr>";
+              echo "<tr>";
+                echo "<td> by :".$regName['name']."</td >";
+              echo"</tr >";
+             echo"<tr>";
+                echo"<td class=\"book-description\" >".$reg['description']."</td >";
+              echo"</tr >";
+            echo"</table >";
+          echo"</td >";
+        echo"</tr >";
+      echo"</table >";
+
+}
+
+?>
+     </div >
+
+    <a id ="addAuthorButton" class="btn btn-warning" href="addBook.php">Add book</a>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
