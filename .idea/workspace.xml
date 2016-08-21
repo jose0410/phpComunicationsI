@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ea053a2-756e-4807-9275-0d1a195a2591" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/php/addAuthor.php" afterPath="$PROJECT_DIR$/web/php/addAuthor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/php/authors.php" afterPath="$PROJECT_DIR$/web/php/authors.php" />
-    </list>
+    <list default="true" id="2ea053a2-756e-4807-9275-0d1a195a2591" name="Default" comment="" />
     <ignored path="phpComunicationsI.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -24,26 +21,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="addAuthor.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="addAuthor.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/php/addAuthor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
+            <state relative-caret-position="297">
               <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-              <folding>
-                <marker date="1471488358000" expanded="true" signature="3396:3538" ph="insert into author" />
-                <marker date="1471488358000" expanded="true" signature="3402:3538" ph="INSERT into author" />
-                <marker date="1471488358000" expanded="true" signature="3403:3538" ph="insert into author... " />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authors.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="authors.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/php/authors.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="-78">
               <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1471792163000" expanded="true" signature="1980:2040" ph="select id,na... author" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -184,11 +179,12 @@
       <updated>1471458382202</updated>
       <workItem from="1471458384065" duration="5334000" />
       <workItem from="1471483442114" duration="3142000" />
+      <workItem from="1471792175481" duration="130000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8476000" />
+    <option name="totallyTimeSpent" value="8606000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="43" width="1260" height="733" extended-state="0" />
@@ -230,11 +226,28 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/php/addAuthor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/php/authors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <marker date="1471792163000" expanded="true" signature="1980:2040" ph="select id,na... author" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/library.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -242,11 +255,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
-          <folding>
-            <marker date="1471488358000" expanded="true" signature="3396:3538" ph="insert into author" />
-            <marker date="1471488358000" expanded="true" signature="3402:3538" ph="INSERT into author" />
-            <marker date="1471488358000" expanded="true" signature="3403:3538" ph="insert into author... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -254,7 +263,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1471792163000" expanded="true" signature="1980:2040" ph="select id,na... author" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -267,26 +278,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/php/addAuthor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/php/authors.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="-78">
           <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/php/addAuthor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding>
-            <marker date="1471488358000" expanded="true" signature="3396:3538" ph="insert into author" />
-            <marker date="1471488358000" expanded="true" signature="3402:3538" ph="INSERT into author" />
-            <marker date="1471488358000" expanded="true" signature="3403:3538" ph="insert into author... " />
+            <marker date="1471792163000" expanded="true" signature="1980:2040" ph="select id,na... author" />
           </folding>
         </state>
       </provider>
