@@ -43,7 +43,11 @@
     <div class = "books_container">
       <table class="table table-hover">
         <tr>
-          <td class="book_img_td" nowrap><div class="book_img"><img src="../img/El Juego de Ripper.jpg" alt="book" width="150" height="200"></div></td>
+          <td class="book_img_td" nowrap>
+            <div class="book_img">
+              <img src="../img/El Juego de Ripper.jpg" alt="book" width="150" height="200">
+            </div>
+          </td>
           <td>
             <table class="table-hover">
               <tr>

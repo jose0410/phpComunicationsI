@@ -47,46 +47,44 @@
 <body>
   <div class = "add_book_form_div">
       <form action="insertSuccess.php" method="post">
-
+        <div class= "textField">
+          <img id = "img_book_add"src="../img/add.png" alt="add image" class="img-circle">
           <div class="form-group">
-              <label >Id Author</label>
-              <input type="number" class="form-control"  name="authorId" placeholder="Type the id Author">
+            <label >Name Book</label>
+            <input type="text" class="form-control"  name="authorName" placeholder="Type the book's name">
           </div>
-          <div class="form-group">
-              <label >Name Book</label>
-              <input type="text" class="form-control"  name="authorName" placeholder="Type the name">
-          </div>
-         
-          <div class="form-group">
-              <label >Description</label>
-              <input type="text" class="form-control"  name="authorBooks" placeholder="Enter a little review">
-          </div>
-          <div class="dropdown">
-              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Gender
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#">Policial</a></li>
-                <li><a href="#">Romantica</a></li>
-                <li><a href="#">Aventura</a></li>
-                <li><a href="#">Terror</a></li>
-                <li><a href="#">Ficcion</a></li>
-                <li><a href="#">Investigacion</a></li>
-                <li><a href="#">Biografica</a></li>
-                <li><a href="#">Infantil</a></li>
-                <li><a href="#">Erotica</a></li>
-                <li><a href="#">Enciclopedia</a></li>
-                <li><a href="#">Politica</a></li>
-                <li><a href="#">Economia</a></li>
-                <li><a href="#">Sociedad</a></li>
-                <li><a href="#">Deportes</a></li>
-              </ul>
-          </div>
-
-          <button type="submit" class="btn btn-default add_book_button" value="addBook">Add Book</button>
+        </div>
+        
+        <div class="textField">       
+        <div class="form-group">
+          <label >Id Author</label>
+          <input type="number" class="form-control"  name="authorId" placeholder="Type the id Author" nowrap>
+        </div>                 
+        <div class="form-group">
+          <label >Description</label>                      
+          <input type="text" class="form-control"  name="authorBooks" placeholder="Enter a little review">                  
+        </div>
+        <div class="dropdown dropdown_gender">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Gender
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">Policial</a></li>
+            <li><a href="#">Romantica</a></li>
+            <li><a href="#">Aventura</a></li>
+            <li><a href="#">Terror</a></li>
+            <li><a href="#">Ficcion</a></li>
+            <li><a href="#">Biografica</a></li>
+            <li><a href="#">Infantil</a></li>
+            <li><a href="#">Enciclopedia</a></li>
+            <li><a href="#">Deportes</a></li>
+          </ul>
+        </div>
+        </div> 
+        
       </form>
-
+      <button type="submit" class="btn btn-default add_book_button" value="addBook">Add Book</button>
   </div>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

@@ -66,6 +66,19 @@
 	width: 10%;
 }
 .book_img_td{
-		width: 10%;
-padding-right: 0%;
+	width: 10%;
+	padding-right: 0%;
+}
+#img_book_add{
+	width: 35%;
+	height: 35%;
+	background-color: rgb(200,200,200);
+	margin-left: 25%;
+}
+.textField{
+	display: inline-block;
+	white-space: nowrap;
+}
+.dropdown_gender{
+	margin-left: 35%;
 }
