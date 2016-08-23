@@ -92,6 +92,15 @@ mysqli_close($conexion);
 </div>
     <a id ="addAuthorButton" class="btn btn-warning" href="addAuthor.php">Add author</a>
 
+
+    <form class="delete-form" action="deleteSuccess.php" method="post">
+    <div class="form-group">
+      <div class="inline-div"><label>ID</label></div>
+     <div class="inline-div"> <input type="number" class="form-control id-textbox "  name="id_author_delete" placeholder="Enter the id "></div>
+      <div class="inline-div">  <button type="submit" class="btn btn-warning" value="deleteAuthor">delete</button></div>
+    </div>  
+  </form>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
