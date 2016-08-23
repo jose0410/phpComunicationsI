@@ -46,11 +46,11 @@
 <?php
 
 
-$conexion=mysqli_connect("localhost","root","root","library") or
+$conexion=mysqli_connect("localhost","root","root1234","library") or
 die("problems with the connexion");
 
 
-$registros=mysqli_query($conexion,"select name,description,author,img_path
+$registros=mysqli_query($conexion,"select id,name,description,author,img_path
                         from book") or
 die("Problems".mysqli_error($conexion));
 
@@ -65,7 +65,8 @@ while ($reg=mysqli_fetch_array($registros)) {
 
       echo"<table class=\"table table-hover\">";
        echo "<tr>";
-  echo "<td class=\"book_img_td\" nowrap><div class=\"book_img\"><img src=\"../img/".$reg['img_path']."\"". "alt=\"book\" width=\"150\" height=\"200\"></div></td>";
+        echo "<td class=\"book_img_td\" nowrap>".$reg['id']."</td>";
+        echo "<td class=\"book_img_td\" nowrap><div class=\"book_img\"><img src=\"../img/".$reg['img_path']."\"". "alt=\"book\" width=\"150\" height=\"200\"></div></td>";
          echo "<td>";
            echo "<table class=\"table-hover book-info-table\">";
              echo "<tr>";
@@ -87,7 +88,14 @@ while ($reg=mysqli_fetch_array($registros)) {
 ?>
      </div >
 
-    <a id ="addAuthorButton" class="btn btn-warning" href="addBook.php">Add book</a>
+  <a id ="addAuthorButton" class="btn btn-warning" href="addBook.php">Add book</a>
+  <form class="delete-form" action="deleteBookSuccess.php" method="post">
+    <div class="form-group">
+      <div class="inline-div"><label>ID</label></div>
+      <div class="inline-div"> <input type="number" class="form-control id-textbox "  name="book_delete" placeholder="Enter the book's id"></div>
+      <div class="inline-div">  <button type="submit" class="btn btn-warning" value="deleteAuthor">Delete</button></div>
+    </div>  
+  </form>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

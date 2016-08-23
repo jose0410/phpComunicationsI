@@ -49,7 +49,7 @@
 <?php
 
   
-$conexion=mysqli_connect("localhost","root","root","library") or
+$conexion=mysqli_connect("localhost","root","root1234","library") or
 die("problems with the connexion");
 
 
@@ -63,10 +63,10 @@ echo "</div>";
      echo " <h2>AUTHORS</h2>";
       echo "<table class="."table table-condensed".">";
        echo " <tr>";
-       echo "<td class="."active"."><h3> id </h3></td>";
-          echo "<td class="."active"."><h3>name</h3></td>";
-          echo "<td class="."active"."><h3>books written</h3></td>";
-          echo "<td class="."active"."><h3>name</h3>age</td>";
+       echo "<td class="."active"."><h3> ID </h3></td>";
+          echo "<td class="."active"."><h3>NAME</h3></td>";
+          echo "<td class="."active"."><h3>BOOKS WRITTEN</h3></td>";
+          echo "<td class="."active"."><h3>AGE</h3></td>";
       echo "</tr>";
 while ($reg=mysqli_fetch_array($registros)){
 
@@ -97,7 +97,7 @@ mysqli_close($conexion);
     <div class="form-group">
       <div class="inline-div"><label>ID</label></div>
      <div class="inline-div"> <input type="number" class="form-control id-textbox "  name="id_author_delete" placeholder="Enter the id "></div>
-      <div class="inline-div">  <button type="submit" class="btn btn-warning" value="deleteAuthor">delete</button></div>
+      <div class="inline-div">  <button type="submit" class="btn btn-warning" value="deleteAuthor">Delete</button></div>
     </div>  
   </form>
 

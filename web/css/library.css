@@ -77,7 +77,7 @@
 }
 .textField{
 	display: inline-block;
-	white-space: nowrap;
+	width: 30%;
 }
 .dropdown_gender{
 	margin-left: 35%;

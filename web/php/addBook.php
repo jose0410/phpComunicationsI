@@ -45,11 +45,11 @@
 </header>
 <body>
 
-<div class = "add_author_form_div">
+<div class = "add_author_form_div textField">
     <form action="insertSuccessBook.php" method="post">
 
         <div class="form-group">
-            <label >image path</label>
+            <label >Image Path</label>
             <input type="text" class="form-control"  name="imgPath" placeholder="Type the name of the image">
         </div>
         <div class="form-group">
@@ -62,11 +62,11 @@
             <input type="text" class="form-control"  name="bookDescription" placeholder="Enter the description of the book">
         </div>
         <div class="form-group">
-            <label >author</label>
+            <label >Author</label>
             <input type="number" class="form-control"  name="bookAuthor" placeholder="Enter the author's id">
         </div>
 
-        <button type="submit" class="btn btn-default" value="addBook">Add</button>
+        <button type="submit" class="btn btn-warning" value="addBook">Add</button>
     </form>
 
 </div>

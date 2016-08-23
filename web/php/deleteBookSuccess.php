@@ -52,11 +52,8 @@ die("problems with the connexion");
 
 
 
-mysqli_query($conexion,"delete from book where author = $_REQUEST[id_author_delete]")
-or die("problems".mysqli_error($conexion)); 
-mysqli_query($conexion,"delete from author where id =  $_REQUEST[id_author_delete]")
-or die("problems".mysqli_error($conexion)); 
-
+mysqli_query($conexion,"delete from book where id = $_REQUEST[book_delete]")
+or die("problems".mysqli_error($conexion));
 mysqli_close($conexion);
 
 ?>
@@ -66,7 +63,7 @@ mysqli_close($conexion);
 
 </div>
 <div class = "success-label">
-<h2>Author deleted </h2>
+<h2>Book deleted </h2>
 </div>
 
 

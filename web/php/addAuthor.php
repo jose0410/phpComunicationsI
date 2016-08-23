@@ -45,11 +45,11 @@
 </header>
 <body>
 
-<div class = "add_author_form_div">
+<div class = "add_author_form_div textField">
     <form action="insertSuccess.php" method="post">
 
         <div class="form-group">
-            <label >id</label>
+            <label >ID</label>
             <input type="text" class="form-control"  name="authorId" placeholder="Type the id">
         </div>
         <div class="form-group">
@@ -66,7 +66,7 @@
             <input type="number" class="form-control"  name="authorAge" placeholder="Enter the age">
         </div>
 
-        <button type="submit" class="btn btn-default" value="addAuthor">Add</button>
+        <button type="submit" class="btn btn-warning" value="addAuthor">Add</button>
     </form>
 
 </div>
