@@ -43,11 +43,11 @@
     </div>
     <div class = "home-img-div">
         <img   id = "home-img" src="../img/home_img.jpg" alt="home-book" width="100%" height="700" class="img-round" />
-        <h2 id= "quote">"A book is a version of the world. If you do not like it, ignore it or offer your own version in return." xs-Salman Rushdie
+        <h2 id= "quote">"A book is a version of the world. If you do not like it, ignore it or offer your own version in return."-Salman Rushdie
         </h2>
         <div class="overlay"></div>
     </div>
-   <p>oe</p>
+   
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
