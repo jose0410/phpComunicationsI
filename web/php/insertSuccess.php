@@ -47,7 +47,7 @@
   <body>
 <?php
 
- $conexion=mysqli_connect("localhost","root","root1234","library") or
+ $conexion=mysqli_connect("localhost","root","root","library") or
 die("problems with the connexion");
 
 mysqli_query($conexion,"insert into  author(id,name,books,age) values 

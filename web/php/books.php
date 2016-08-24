@@ -46,7 +46,7 @@
 <?php
 
 
-$conexion=mysqli_connect("localhost","root","root1234","library") or
+$conexion=mysqli_connect("localhost","root","root","library") or
 die("problems with the connexion");
 
 
